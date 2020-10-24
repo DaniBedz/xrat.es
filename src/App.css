@@ -4,17 +4,19 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 #root {
-  background-color: black;
   border-radius: 2em;
   padding: 2rem;
-  border-color: white;
   color: white;
-  border-style: solid;
-  border-width: 0.4em;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+span {
+  font-size: 2rem;
 }
 
 body {
@@ -24,12 +26,18 @@ body {
   align-items: center;
   min-height: 100vh;
   text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 h1 {
   margin: 0px;
+  padding: 1rem;
   margin-bottom: 0.5rem;
   font-size: 3rem;
+  border-radius: 0.3em;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 
 input {
@@ -37,24 +45,29 @@ input {
   border-radius: 0.3em;
   padding: 0.25rem;
   width: 7em;
-  font-family: "Courier New", Courier, monospace;
   font-size: 1.5rem;
   background-color: black;
   color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 select {
   margin-left: 0.5rem;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   background-color: black;
   color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 div.equals {
   font-weight: bold;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 4rem;
+  font-size: 5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 
 /* Chrome, Safari, Edge, Opera */

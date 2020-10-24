@@ -60,7 +60,7 @@ function App() {
 
   return (
     <>
-    <h1>Convert</h1>
+    <h1>Currency Converter</h1>
       <CurrencyRow
         currencyOptions={currencyOptions}
         selectedCurrency={fromCurrency}
@@ -70,7 +70,7 @@ function App() {
 
       />
 
-      <div  className='equals'>=</div>
+      <div className='equals'>=</div>
       <CurrencyRow
         currencyOptions={currencyOptions}
         selectedCurrency={toCurrency}
