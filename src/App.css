@@ -13,7 +13,6 @@ html {
   padding: 0.5rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.75);
-  padding-bottom: 1.75rem;
 }
 
 span {
@@ -25,7 +24,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 75vh;
   text-align: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -33,8 +32,11 @@ body {
 
 h1 {
   margin: 0px;
-  padding: 1rem;
   margin-bottom: 0.5rem;
+  margin-top: -0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
   font-size: 3rem;
   border-radius: 0.3em;
   -webkit-text-stroke-width: 2px;
@@ -45,7 +47,7 @@ input {
   border: 1px solid #333;
   border-radius: 0.3em;
   padding: 0.25rem;
-  width: 7em;
+  width: 9em;
   font-size: 1.5rem;
   background-color: black;
   color: white;
@@ -54,12 +56,13 @@ input {
 }
 
 select {
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   font-size: 1.5rem;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  filter: invert(100%);
 }
 
 div.equals {
@@ -69,6 +72,8 @@ div.equals {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
+  margin: -0.25em;
+  margin-top: -0.4em;
 }
 
 /* Chrome, Safari, Edge, Opera */
