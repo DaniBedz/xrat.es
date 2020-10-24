@@ -1,38 +1,74 @@
-.App {
+html {
+  background: url("https://xrat.es/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#root {
+  background-color: black;
+  border-radius: 2em;
+  padding: 2rem;
+  border-color: white;
+  color: white;
+  border-style: solid;
+  border-width: 0.4em;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin: 0px;
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input {
+  border: 1px solid #333;
+  border-radius: 0.3em;
+  padding: 0.25rem;
+  width: 7em;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+select {
+  margin-left: 0.5rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.25rem;
+  background-color: black;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div.equals {
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 4rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"] {
+  text-align: center;
 }
