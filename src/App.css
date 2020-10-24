@@ -32,12 +32,12 @@ body {
 
 h1 {
   margin: 0px;
-  margin-bottom: 0.5rem;
-  margin-top: -0.5rem;
+  margin-bottom: 0.25rem;
+  margin-top: -0.4rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-bottom: 0.5rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   border-radius: 0.3em;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
@@ -73,7 +73,7 @@ div.equals {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
   margin: -0.25em;
-  margin-top: -0.4em;
+  margin-top: -0.45em;
 }
 
 /* Chrome, Safari, Edge, Opera */
