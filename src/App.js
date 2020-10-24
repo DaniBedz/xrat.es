@@ -69,8 +69,7 @@ function App() {
         amount={fromAmount}
 
       />
-
-      <div className='equals'>=</div>
+      
       <CurrencyRow
         currencyOptions={currencyOptions}
         selectedCurrency={toCurrency}
