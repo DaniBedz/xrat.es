@@ -1,1 +1,1 @@
-A simple currency converter build with create-react-app.
+A simple currency converter built with create-react-app.
