@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import CurrencyRow from './CurrencyRow'
+import CurrencyRow from './CurrencyRow';
 
-
-const BASE_URL = 'https://api.exchangeratesapi.io/latest';
+const BASE_URL = 'https://api.exchangeratesapi.io/latest?access_key=';
+const API_KEY = process.env.API_KEY;
 
 function App() {
   const [currencyOptions, setCurrencyOptions] = useState([])
@@ -23,9 +23,12 @@ function App() {
   }
 
   useEffect(() => {
-    fetch(BASE_URL)
+    console.log(process.env);
+    console.log(API_KEY);
+    fetch(`${BASE_URL}${API_KEY}`)
       .then(res => res.json())
       .then(data => {
+        console.log(data);
         const firstCurrency = 'USD'
         setCurrencyOptions([data.base, ...Object.keys(data.rates)])
         setFromCurrency('AUD')
@@ -69,7 +72,7 @@ function App() {
         amount={fromAmount}
 
       />
-      
+
       <CurrencyRow
         currencyOptions={currencyOptions}
         selectedCurrency={toCurrency}
@@ -77,7 +80,7 @@ function App() {
         onChangeAmount={handleToAmountChange}
         amount={toAmount}
       />
-  
+
     </>
   );
 }
